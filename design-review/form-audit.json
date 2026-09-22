@@ -1,0 +1,185 @@
+{
+  "source": "yugure-form.blend",
+  "blenderVersion": "4.3.2",
+  "openingRayTests": [
+    {
+      "opening": "Entry \u2022 0.98 x 2.12 m",
+      "wall": "Front wall",
+      "rayPassesThroughWall": true
+    },
+    {
+      "opening": "Window",
+      "wall": "Front wall",
+      "rayPassesThroughWall": true
+    },
+    {
+      "opening": "Window",
+      "wall": "Front wall",
+      "rayPassesThroughWall": true
+    },
+    {
+      "opening": "Window",
+      "wall": "Front wall",
+      "rayPassesThroughWall": true
+    },
+    {
+      "opening": "Window",
+      "wall": "Rear wall",
+      "rayPassesThroughWall": true
+    },
+    {
+      "opening": "Window",
+      "wall": "Rear wall",
+      "rayPassesThroughWall": true
+    },
+    {
+      "opening": "Window",
+      "wall": "Rear wall",
+      "rayPassesThroughWall": true
+    },
+    {
+      "opening": "Side window",
+      "wall": "West wall",
+      "rayPassesThroughWall": true
+    },
+    {
+      "opening": "Side window",
+      "wall": "West wall",
+      "rayPassesThroughWall": true
+    },
+    {
+      "opening": "Side window",
+      "wall": "East wall",
+      "rayPassesThroughWall": true
+    },
+    {
+      "opening": "Side window",
+      "wall": "East wall",
+      "rayPassesThroughWall": true
+    }
+  ],
+  "shellMeshes": [
+    {
+      "object": "Foundation",
+      "nonManifoldEdges": 0
+    },
+    {
+      "object": "Front wall",
+      "nonManifoldEdges": 0
+    },
+    {
+      "object": "Rear wall",
+      "nonManifoldEdges": 0
+    },
+    {
+      "object": "West wall",
+      "nonManifoldEdges": 0
+    },
+    {
+      "object": "East wall",
+      "nonManifoldEdges": 0
+    },
+    {
+      "object": "Gabled roof",
+      "nonManifoldEdges": 0
+    },
+    {
+      "object": "Condenser wall bracket",
+      "nonManifoldEdges": 0
+    },
+    {
+      "object": "Condenser wall plate",
+      "nonManifoldEdges": 0
+    },
+    {
+      "object": "Condenser wall bracket.001",
+      "nonManifoldEdges": 0
+    },
+    {
+      "object": "Condenser wall plate.001",
+      "nonManifoldEdges": 0
+    }
+  ],
+  "residentHeightMetres": 1.75,
+  "doorLeafDimensionsMetres": [
+    0.92,
+    0.07,
+    2.08
+  ],
+  "doorOpeningDimensionsMetres": [
+    0.98,
+    0.18,
+    2.12
+  ],
+  "roadTopology": {
+    "blocks": 54,
+    "segments": 108,
+    "junctions": 56,
+    "degreeHistogram": {
+      "4": 48,
+      "3": 8
+    },
+    "radiusMetres": 48
+  },
+  "pass": true,
+  "scope": "Actual mesh opening, structural manifoldness, human scale and graph checks. Browser collisions and performance belong to Runtime and are not certified here.",
+  "doorwayBVHChecks": [
+    {
+      "frame": 1,
+      "minimumTorsoClearanceMetres": 2.375,
+      "clearForRadius023": true
+    },
+    {
+      "frame": 16,
+      "minimumTorsoClearanceMetres": 1.1744,
+      "clearForRadius023": true
+    },
+    {
+      "frame": 28,
+      "minimumTorsoClearanceMetres": 0.6761,
+      "clearForRadius023": true
+    },
+    {
+      "frame": 36,
+      "minimumTorsoClearanceMetres": 0.4548,
+      "clearForRadius023": true
+    },
+    {
+      "frame": 50,
+      "minimumTorsoClearanceMetres": 0.5933,
+      "clearForRadius023": true
+    },
+    {
+      "frame": 90,
+      "minimumTorsoClearanceMetres": 1.2133,
+      "clearForRadius023": true
+    },
+    {
+      "frame": 113,
+      "minimumTorsoClearanceMetres": 0.4549,
+      "clearForRadius023": true
+    },
+    {
+      "frame": 125,
+      "minimumTorsoClearanceMetres": 0.7684,
+      "clearForRadius023": true
+    },
+    {
+      "frame": 143,
+      "minimumTorsoClearanceMetres": 1.6423,
+      "clearForRadius023": true
+    },
+    {
+      "frame": 155,
+      "minimumTorsoClearanceMetres": 2.4175,
+      "clearForRadius023": true
+    }
+  ],
+  "ceilingFixtureGapMetres": 0.0,
+  "articulatedParts": {
+    "Leg_L": 2,
+    "Leg_R": 2,
+    "Arm_L": 2,
+    "Arm_R": 2
+  }
+}

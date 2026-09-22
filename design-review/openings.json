@@ -1,0 +1,38 @@
+{
+  "schema": "game-room.opening-schedule.v1",
+  "roomId": "yugure-blender-review",
+  "primaryArrival": {
+    "openingId": "front-door",
+    "exception": "Residential single-leaf door at real human scale; not a public hall."
+  },
+  "openings": [
+    {
+      "id": "front-door",
+      "wall": "front-wall",
+      "widthMeters": 0.98,
+      "heightMeters": 2.12,
+      "sillMeters": 0.34,
+      "depthMeters": 0.18,
+      "destination": "Furnished residential interior",
+      "mask": "masks/front-door-traced.png",
+      "approved": true,
+      "kind": "door",
+      "cutter": "masks/front-door-cutter.json",
+      "cutterNote": "Cutter width/height describe the full retained-wall mask canvas; measured white contour aperture matches this opening schedule."
+    },
+    {
+      "id": "front-window",
+      "wall": "front-wall",
+      "widthMeters": 1.5,
+      "heightMeters": 1.3,
+      "sillMeters": 1.15,
+      "depthMeters": 0.18,
+      "destination": "Furnished residential interior",
+      "mask": "masks/front-window-traced.png",
+      "approved": true,
+      "kind": "window",
+      "cutter": "masks/front-window-cutter.json",
+      "cutterNote": "Cutter width/height describe the full retained-wall mask canvas; measured white contour aperture matches this opening schedule."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "stage": "Function draft",
+  "blenderVersion": "4.3.2",
+  "nativeBlender": true,
+  "humanApprovals": {
+    "function": false,
+    "form": false,
+    "runtime": false
+  },
+  "notImplementedInWeb": [
+    "third-person camera",
+    "new native assets",
+    "enter/exit navigation"
+  ],
+  "paidServicesUsed": false
+}

@@ -1,0 +1,10 @@
+{
+  "blocks": 54,
+  "segments": 108,
+  "junctions": 56,
+  "degreeHistogram": {
+    "4": 48,
+    "3": 8
+  },
+  "radiusMetres": 48
+}

@@ -1,0 +1,14 @@
+FAIL: props.json: generation must use Meshy model meshy-5
+FAIL: props.json: current official Meshy pricing verification is required
+FAIL: props.json: positive creditsPerTexturedTask is required
+FAIL: props.json: hardCreditCeiling must be positive and no greater than the room credit budget
+FAIL: Runtime gate: strangestElement review is required
+FAIL: final-report.json: gates.runtime must be true
+FAIL: Form gate: prop city-bicycle requires an accepted, hashed Meshy GLB
+FAIL: Runtime gate: runtimeChecks.vlow must be true
+FAIL: Runtime gate: runtimeChecks.textureTiers must be true
+FAIL: Runtime gate: runtimeChecks.lightmap must be true
+FAIL: Runtime gate: runtimeChecks.lightingManifest must be true
+FAIL: Runtime gate: runtimeChecks.performance must be true
+FAIL: Runtime gate: browser capture is required
+FAIL: Runtime gate: browser errors must be empty

@@ -1,0 +1,23 @@
+{
+  "scene": "Kyoto Ninenzaka / Sannenzaka — closed spherical adaptation",
+  "route": "/kyoto-loop.html",
+  "authorization": "User requests a new spherical closed-loop scene, explicitly preserving the existing scene. Existing session authorizes native Blender assets, Three.js runtime and publication.",
+  "preserved": [
+    "All previously tracked source files, including kyoto.html, index.html and sannen-*",
+    "Existing scene URLs and behavior"
+  ],
+  "topology": "Eight existing street segments: western Sannenzaka connects artistically to the eastern Kiyomizuzaka endpoint. Ninenzaka and the short western Kiyomizuzaka segment remain branches. This is not a real geographic connection.",
+  "source": "../sannenzaka/source.osm.xml.gz, OSM attribution retained in the new page",
+  "buildings": "121 of 142 original mapped anchors retained, positioned along the folded street sequence; remaining anchors omitted when they cannot be placed with street/house clearance. No additional building locations invented as geographic facts.",
+  "surface": "Periodic, asymmetric spherical ribbon. Existing terrain footprint has backing and a plain irregular earth support; this underside is not mapped or walkable. No extra streets or polar vegetation rings.",
+  "collision": "Existing metric walk surface and door openings in unfolded coordinates; short swept steps wrap the seam. Native opaque curved geometry constrains camera rays.",
+  "player": "Independent native Resident, WASD/arrows and touch joystick, nearby left-click/E and touch button, local radial camera up, phase and heading continuous through seam",
+  "nativeAssets": "Read-only reuse of original Blender GLBs. New spatial assembly and periodic navigation are implemented in Three.js. Current assembled geometry exported to Blender for offline review.",
+  "camera": "Whole small world default; panoramic drag/zoom, landmark views, NPC follow and player exploration. Portrait overview uses aspect-based fit.",
+  "paidServices": 0,
+  "limitations": [
+    "Artistic reordering and bending of a real-map-derived scene, not geodetically accurate",
+    "No browser GPU or real touch-device visual/performance validation",
+    "Generic historical room gate retains unmet Meshy/baking/performance/browser requirements; no fabricated gate approval"
+  ]
+}

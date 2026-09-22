@@ -1,0 +1,75 @@
+{
+  "schema": "game-room.room-brief.v1",
+  "roomId": "yugure-blender-review",
+  "family": "custom",
+  "purpose": "Rotatable twilight Japanese residential tiny planet with pedestrian third-person exploration",
+  "runtimeSurface": "Three.js WebGL",
+  "boundsMeters": [
+    114,
+    114,
+    114
+  ],
+  "hero": {
+    "id": "residential-street",
+    "role": "walkable detailed neighbourhood",
+    "reservedBoundsMeters": [
+      25,
+      25,
+      9
+    ]
+  },
+  "symmetry": {
+    "mode": "none",
+    "order": 1,
+    "appliesTo": [],
+    "exceptions": [
+      "Street topology uses cube sphere; individual props need not repeat in radial rings."
+    ]
+  },
+  "circulation": {
+    "description": "Cube-sphere grid: 54 blocks, 108 streets, degree at most 4. 5.2 m asphalt carriageway and sidewalks. Trees confined to individual paved planters.",
+    "minimumClearanceMeters": 1.2
+  },
+  "productionCamera": {
+    "viewport": [
+      1280,
+      1100
+    ],
+    "location": [
+      109,
+      -132,
+      105
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "verticalFovDegrees": 40
+  },
+  "performanceBudget": {
+    "maxSceneTriangles": 600000,
+    "maxVLowBytes": 12000000,
+    "maxHighTextureBytes": 32000000
+  },
+  "creditBudget": {
+    "maximumCredits": 0,
+    "approvalRequired": true
+  },
+  "environment": {
+    "type": "none",
+    "identity": "",
+    "source": "",
+    "assignmentKey": ""
+  },
+  "artifacts": {
+    "floorPlan": "form-renders/floor-plan.png",
+    "reflectedCeilingPlan": "form-renders/roof-plan.png",
+    "planMetadata": "plan-metadata.json",
+    "wallElevations": [
+      "form-renders/front-elevation.png"
+    ],
+    "visualTarget": "form-renders/street-detail.png",
+    "openingContactSheet": "masks/opening-contact.png"
+  }
+}

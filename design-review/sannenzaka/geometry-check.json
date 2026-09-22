@@ -1,0 +1,40 @@
+{
+  "pass": true,
+  "sourceHashMatches": true,
+  "assets": [
+    {
+      "name": "Machiya0",
+      "size": [
+        7.039999723434448,
+        7.460000174397914,
+        8.735140867949804
+      ],
+      "triangles": 3220
+    },
+    {
+      "name": "Machiya1",
+      "size": [
+        7.039999723434448,
+        7.460000174397914,
+        8.735140867949804
+      ],
+      "triangles": 3220
+    },
+    {
+      "name": "YasakaPagoda",
+      "size": [
+        12.544354545828185,
+        30.799999237060547,
+        12.544352259768738
+      ],
+      "triangles": 14660
+    }
+  ],
+  "openings": 6,
+  "checks": [
+    "Native Blender GLB hash matches provenance",
+    "Precise evaluated vertex bounds",
+    "Door and window Boolean apertures clear of wall material",
+    "Five-tier pagoda at authored miniature height"
+  ]
+}

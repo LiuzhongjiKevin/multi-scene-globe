@@ -1,0 +1,42 @@
+{
+  "schema": "game-room.milestone-reviews.v1",
+  "roomId": "yugure-blender-review",
+  "function": {
+    "status": "approved",
+    "approvedBy": "user",
+    "approvedAt": "2026-09-12T04:48:23.670163+00:00",
+    "evidence": [
+      "renders/globe-review.png",
+      "renders/street-detail.png",
+      "renders/orthographic-plan.png",
+      "renders/front-elevation.png"
+    ],
+    "strangestElement": "Real-scale pedestrians on a miniature spherical street network",
+    "notes": "Historical review of the original authored assets. This is not approval of future modifications or evidence of browser/GPU validation."
+  },
+  "form": {
+    "status": "approved",
+    "approvedBy": "user",
+    "approvedAt": "2026-09-14T05:27:49.574636+00:00",
+    "evidence": [
+      "form-renders/street-detail.png",
+      "form-renders/globe.png",
+      "form-renders/third-person.png",
+      "form-audit.json"
+    ],
+    "strangestElement": "A real-scale residential street on a sphere. Radius increased from 36 to 48 metres because the measured smallest lot was too narrow for cycle parking and sidewalks.",
+    "notes": "Historical review of the original authored assets. This is not approval of future modifications or evidence of browser/GPU validation."
+  },
+  "runtime": {
+    "status": "approved",
+    "approvedBy": "user",
+    "approvedAt": "2026-09-14T05:36:35.954863+00:00",
+    "evidence": [
+      "yugure-interactive-preview.html",
+      "export-check.json",
+      "simulation-check.json"
+    ],
+    "strangestElement": "",
+    "notes": "Historical review of the original authored assets. This is not approval of future modifications or evidence of browser/GPU validation."
+  }
+}

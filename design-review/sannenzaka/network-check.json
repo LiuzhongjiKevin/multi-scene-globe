@@ -1,0 +1,23 @@
+{
+  "pass": true,
+  "source": "https://www.openstreetmap.org/api/0.6/map?bbox=135.7778,34.9958,135.7830,35.0003",
+  "roads": 8,
+  "mappedBuildings": 142,
+  "accessibleStorefronts": 39,
+  "connectedHomePairs": 1521,
+  "navigationNodes": 927,
+  "stairCounts": [
+    {
+      "osmId": "30882783",
+      "count": 17
+    },
+    {
+      "osmId": "179116810",
+      "count": 46
+    }
+  ],
+  "limitations": [
+    "Elevations are authored, not surveyed.",
+    "Building anchors and road geometry are mapped; facades are reconstructed."
+  ]
+}

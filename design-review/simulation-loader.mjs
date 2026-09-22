@@ -1,0 +1,2 @@
+export {resolve} from './node-loader.mjs';
+export async function load(url,context,nextLoad){const result=await nextLoad(url,context);if(url.endsWith('/dist/next-main.js'))return {...result,source:String(result.source).replace("new T.WebGLRenderer({antialias:true,powerPreference:'high-performance'})","globalThis.__renderer").replace('new OrbitControls(camera,renderer.domElement)','globalThis.__controls')};return result}

@@ -1,0 +1,83 @@
+{
+  "schema": "game-room.layout.v1",
+  "roomId": "yugure-blender-review",
+  "units": "meters",
+  "surfaces": [
+    {
+      "id": "street-base",
+      "kind": "floor",
+      "dimensionsMeters": [
+        28,
+        24,
+        0.4
+      ]
+    },
+    {
+      "id": "front-wall",
+      "kind": "wall",
+      "dimensionsMeters": [
+        6.6,
+        0.18,
+        5.5
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "id": "reference-bike-0",
+      "assetId": "city-bicycle",
+      "positionMeters": [
+        -5.7,
+        -1,
+        0.03
+      ],
+      "rotationDegrees": [
+        0,
+        0,
+        90
+      ]
+    },
+    {
+      "id": "reference-bike-1",
+      "assetId": "city-bicycle",
+      "positionMeters": [
+        -4.9,
+        -1,
+        0.03
+      ],
+      "rotationDegrees": [
+        0,
+        0,
+        90
+      ]
+    },
+    {
+      "id": "reference-bike-2",
+      "assetId": "city-bicycle",
+      "positionMeters": [
+        -4.1,
+        -1,
+        0.03
+      ],
+      "rotationDegrees": [
+        0,
+        0,
+        90
+      ]
+    }
+  ],
+  "productionCamera": {
+    "location": [
+      0,
+      0,
+      0
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "verticalFovDegrees": 60
+  },
+  "scope": "Street scale review. Whole planet layout defined reproducibly by build.py and road-topology.json."
+}

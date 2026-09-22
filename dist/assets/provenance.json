@@ -1,0 +1,23 @@
+{
+  "generator": "4.3.2",
+  "source": "design-review/yugure-form.blend",
+  "sourceSHA256": "06b94169c1d4e5f1baa9cb7bf6f08afdca7a37c1d91a370f7344575b382f0ca7",
+  "glbSHA256": "bc19e0bfda97693f04ee84464e9f79c6db0381847c291e63c4a000c2c15ef795",
+  "bytes": 1236128,
+  "trianglesPerAsset": {
+    "House": 11280,
+    "Bicycle": 4000,
+    "Resident": 1828,
+    "Tree": 932,
+    "Signal": 2104,
+    "Post": 1636
+  },
+  "coordinateSystem": "glTF Y-up; house front +Z; real metres",
+  "dynamicPivots": [
+    "Door",
+    "Leg_L",
+    "Leg_R",
+    "Arm_L",
+    "Arm_R"
+  ]
+}

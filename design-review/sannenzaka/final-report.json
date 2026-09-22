@@ -1,0 +1,157 @@
+{
+  "pass": true,
+  "virtualSeconds": 454.4900000000691,
+  "events": {
+    "arrivals": 118,
+    "departures": 116,
+    "doorClicks": 4,
+    "doorWaitFrames": 764,
+    "stairFrames": 32609
+  },
+  "people": 30,
+  "meshes": 425,
+  "instances": 6831,
+  "stats": {
+    "mappedBuildings": 142,
+    "storefronts": 39,
+    "stairTreads": 63,
+    "pavers": 2075,
+    "lanterns": 110,
+    "lightPools": 4,
+    "bicycleParking": 1,
+    "nativeAssets": true
+  },
+  "checks": [
+    "GLTFLoader reads native architecture and residents",
+    "All instances finite",
+    "Manual sliding door opens",
+    "Pause freezes simulation",
+    "Arrivals and departures",
+    "Follow camera and next visitor",
+    "Native limb pivots",
+    "Pointer raycast opens visible shop door",
+    "Dragging does not trigger door click",
+    "Pedestrians wait for open doors and slow on stairs",
+    "Pause freezes matrices and positions",
+    "Four lantern light pools and bicycle parking"
+  ],
+  "limitation": "Node DOM/renderer stubs; not browser WebGL rendering or mobile performance.",
+  "provenance": {
+    "generator": "4.3.2",
+    "source": "design-review/sannenzaka/sannenzaka-assets.blend",
+    "sourceSHA256": "6903f63b577307b5dc3360539d075d313c5c357458f9f96104c25b8de56ce8e9",
+    "glbSHA256": "f5f4246a15883165226f758daa8a310f6e67cb5240224eead6f58b01c4cf439c",
+    "nativeAssets": [
+      "Machiya0",
+      "Machiya1",
+      "YasakaPagoda"
+    ],
+    "openingCount": 6,
+    "method": "Native mesh construction and applied Exact Boolean apertures; no paid generation"
+  },
+  "network": {
+    "pass": true,
+    "source": "https://www.openstreetmap.org/api/0.6/map?bbox=135.7778,34.9958,135.7830,35.0003",
+    "roads": 8,
+    "mappedBuildings": 142,
+    "accessibleStorefronts": 39,
+    "connectedHomePairs": 1521,
+    "navigationNodes": 927,
+    "stairCounts": [
+      {
+        "osmId": "30882783",
+        "count": 17
+      },
+      {
+        "osmId": "179116810",
+        "count": 46
+      }
+    ],
+    "limitations": [
+      "Elevations are authored, not surveyed.",
+      "Building anchors and road geometry are mapped; facades are reconstructed."
+    ]
+  },
+  "geometry": {
+    "pass": true,
+    "sourceHashMatches": true,
+    "assets": [
+      {
+        "name": "Machiya0",
+        "size": [
+          7.039999723434448,
+          7.460000174397914,
+          8.735140867949804
+        ],
+        "triangles": 3220
+      },
+      {
+        "name": "Machiya1",
+        "size": [
+          7.039999723434448,
+          7.460000174397914,
+          8.735140867949804
+        ],
+        "triangles": 3220
+      },
+      {
+        "name": "YasakaPagoda",
+        "size": [
+          12.544354545828185,
+          30.799999237060547,
+          12.544352259768738
+        ],
+        "triangles": 14660
+      }
+    ],
+    "openings": 6,
+    "checks": [
+      "Native Blender GLB hash matches provenance",
+      "Precise evaluated vertex bounds",
+      "Door and window Boolean apertures clear of wall material",
+      "Five-tier pagoda at authored miniature height"
+    ]
+  },
+  "visualReview": "Retained v7 offline Blender structural renders. This refinement was checked with Node simulation and real Three.js raycasting, not a browser/GPU or fresh Blender visual pass.",
+  "offlineViews": [
+    "overview.png",
+    "sannen.png",
+    "ninen.png",
+    "yasaka.png"
+  ],
+  "refinement": [
+    "Stair speed and door waiting",
+    "Consistent right-side walking with following distance",
+    "Post-interpolation camera collision",
+    "Four fixed lantern light pools",
+    "One native Blender bicycle parking location",
+    "Varied paving tones",
+    "Skip static door matrix uploads; petals capped at 30 Hz",
+    "Independent keyboard/touch explorer using native Resident",
+    "Swept walk-surface collision across eight roads and 39 shop entries",
+    "Nearby left-click/E prompt and touch interaction button",
+    "Door occupancy protection and independent third-person camera"
+  ],
+  "exploration": {
+    "pass": true,
+    "checks": [
+      "Independent player moves with WASD and keeps its position between modes",
+      "Drag rotates the third-person camera without triggering an interaction",
+      "Touch joystick moves and releases; pointer cancellation and window blur clear input",
+      "All eight street centerlines and both stair flights work, ascending and descending",
+      "All 39 open shop doors allow entry and exit; closed doors, walls, counters and scene edges block traversal",
+      "Nearby prompt, left-click action, range limit and occupied-door safety use production callbacks",
+      "Pause, follow mode and Escape switch cleanly without leaving movement active"
+    ],
+    "limitations": "Node production-logic checks with DOM/renderer stubs; no browser GPU or touch-device visual validation."
+  },
+  "genericGateAudit": {
+    "pass": false,
+    "unchangedLimitations": [
+      "Meshy-only requirements conflict with authorized native Blender asset pipeline",
+      "Generic historical review fields, texture tiers, baking and performance requirements unmet",
+      "No compatible browser capture; no browser GPU pass claimed"
+    ],
+    "command": "validate_room.py design-review --gate runtime"
+  }
+}

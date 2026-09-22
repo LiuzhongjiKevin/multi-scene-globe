@@ -1,0 +1,92 @@
+[
+  {
+    "asset": "Machiya0",
+    "id": "door",
+    "center": [
+      1.65,
+      1.18,
+      3.42
+    ],
+    "dimensions": [
+      1.18,
+      2.36,
+      0.8
+    ],
+    "method": "Applied Exact Boolean"
+  },
+  {
+    "asset": "Machiya0",
+    "id": "display",
+    "center": [
+      -1.25,
+      1.4,
+      3.42
+    ],
+    "dimensions": [
+      2.6,
+      1.9,
+      0.8
+    ],
+    "method": "Applied Exact Boolean"
+  },
+  {
+    "asset": "Machiya0",
+    "id": "upper",
+    "center": [
+      0,
+      3.92,
+      3.42
+    ],
+    "dimensions": [
+      5,
+      1.4,
+      0.8
+    ],
+    "method": "Applied Exact Boolean"
+  },
+  {
+    "asset": "Machiya1",
+    "id": "door",
+    "center": [
+      1.65,
+      1.18,
+      3.42
+    ],
+    "dimensions": [
+      1.18,
+      2.36,
+      0.8
+    ],
+    "method": "Applied Exact Boolean"
+  },
+  {
+    "asset": "Machiya1",
+    "id": "display",
+    "center": [
+      -1.25,
+      1.4,
+      3.42
+    ],
+    "dimensions": [
+      2.6,
+      1.9,
+      0.8
+    ],
+    "method": "Applied Exact Boolean"
+  },
+  {
+    "asset": "Machiya1",
+    "id": "upper",
+    "center": [
+      0,
+      3.92,
+      3.42
+    ],
+    "dimensions": [
+      5,
+      1.4,
+      0.8
+    ],
+    "method": "Applied Exact Boolean"
+  }
+]

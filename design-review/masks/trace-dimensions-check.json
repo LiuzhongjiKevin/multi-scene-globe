@@ -1,0 +1,34 @@
+[
+  {
+    "opening": "front-door",
+    "canvasPhysicalDimensionsMetres": [
+      1.3265,
+      2.2318143459915616
+    ],
+    "actualApertureMetres": [
+      0.9800000269500002,
+      2.1200000008945152
+    ],
+    "nativeApertureMetres": [
+      0.98,
+      2.12
+    ],
+    "pass": true
+  },
+  {
+    "opening": "front-window",
+    "canvasPhysicalDimensionsMetres": [
+      1.895,
+      2.495
+    ],
+    "actualApertureMetres": [
+      1.4999999465,
+      1.3000000395
+    ],
+    "nativeApertureMetres": [
+      1.5,
+      1.3
+    ],
+    "pass": true
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "schema": "game-room.prop-manifest.v1",
+  "roomId": "yugure-blender-review",
+  "generation": {
+    "provider": "procedural-blender",
+    "apiModel": "none",
+    "pricingSource": "",
+    "pricingVerifiedAt": "",
+    "creditsPerTexturedTask": 0,
+    "hardCreditCeiling": 0,
+    "maxChargedAttemptsPerAsset": 2
+  },
+  "assets": [
+    {
+      "id": "city-bicycle",
+      "function": "Resident bicycle and marked cycle parking",
+      "dimensionsMeters": [
+        1.75,
+        0.6,
+        1.05
+      ],
+      "attachmentFace": "floor",
+      "semanticFront": "positive-x",
+      "class": "reusable",
+      "imagePrompt": "Isolated city bicycle showing full frame, spokes, basket and stand, neutral background",
+      "polygonTarget": 15000,
+      "rejectionCriteria": [
+        "Floating wheels",
+        "Fused spokes",
+        "Wrong human scale"
+      ],
+      "referenceImage": "renders/bicycle-reference.png",
+      "referenceApproved": true,
+      "generator": "Blender native geometry",
+      "attempts": [],
+      "description": "Native steel frame bicycle with basket, spoke wheels and kickstand",
+      "targetPolycount": 15000,
+      "intendedInstances": 3,
+      "image": {
+        "source": "form-renders/bicycle-reference.png",
+        "generator": "Blender 4.3.2 native geometry",
+        "prompt": "Isolated city bicycle showing full frame, spokes, basket and stand, neutral background",
+        "approved": true,
+        "approvedBy": "user"
+      }
+    }
+  ],
+  "nativeRouteException": "User approved pure Blender modelling by replying 继续 to the explicit approach question. No Meshy service is applicable."
+}

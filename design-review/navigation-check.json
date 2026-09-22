@@ -1,0 +1,16 @@
+{
+  "pass": true,
+  "radiusMetres": 48,
+  "houses": 43,
+  "roads": 31,
+  "junctions": 26,
+  "tJunctions": 10,
+  "crossroads": 0,
+  "maxDegree": 3,
+  "navigationWaypoints": 1014,
+  "housePairsReachable": 1849,
+  "riversideWaypointsReachable": 160,
+  "minimumHouseCenterGap": 13.582724103527173,
+  "minimumHouseRiverCenterGap": 8.54878316085274,
+  "minimumHouseRoadCenterGap": 9.154800199873529
+}

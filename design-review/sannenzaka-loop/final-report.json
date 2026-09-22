@@ -1,0 +1,73 @@
+{
+  "pass": true,
+  "loop": {
+    "pass": true,
+    "lengthMetres": 301.0862396185712,
+    "sourceBuildings": 142,
+    "retainedBuildings": 121,
+    "enterableShops": 24,
+    "maximumWorldStep": 0.14362808476654546,
+    "maxCameraStep": 0.1279123830561956,
+    "checks": [
+      "Endpoints and up normals coincide",
+      "One full walkable circuit, both seam directions",
+      "Player and third-person camera cross seam continuously",
+      "NPCs traverse seam",
+      "Independent curved door instance updates",
+      "No additional geographic roads or full globe filler"
+    ]
+  },
+  "exploration": {
+    "pass": true,
+    "checks": [
+      "Independent player moves with WASD and keeps its position between modes",
+      "Drag rotates the third-person camera without triggering an interaction",
+      "Touch joystick moves and releases; pointer cancellation and window blur clear input",
+      "All eight street centerlines and both stair flights work, ascending and descending",
+      "All 24 open shop doors allow entry and exit; closed doors, walls, counters and scene edges block traversal",
+      "Nearby prompt, left-click action, range limit and occupied-door safety use production callbacks",
+      "Pause, follow mode and Escape switch cleanly without leaving movement active"
+    ],
+    "limitations": "Node production-logic checks with DOM/renderer stubs; no browser GPU or touch-device visual validation."
+  },
+  "virtualSeconds": 155.09000000000103,
+  "events": {
+    "arrivals": 51,
+    "departures": 47,
+    "doorClicks": 4,
+    "doorWaitFrames": 423,
+    "stairFrames": 7897,
+    "seamCrossings": 3
+  },
+  "people": 30,
+  "meshes": 427,
+  "instances": 6110,
+  "stats": {
+    "mappedBuildings": 121,
+    "storefronts": 24,
+    "stairTreads": 63,
+    "pavers": 2075,
+    "lanterns": 76,
+    "lightPools": 4,
+    "bicycleParking": 1,
+    "nativeAssets": true
+  },
+  "checks": [
+    "GLTFLoader reads native architecture and residents",
+    "All instances finite",
+    "Manual sliding door opens",
+    "Pause freezes simulation",
+    "Arrivals and departures",
+    "Follow camera and next visitor",
+    "Native limb pivots",
+    "Pointer raycast opens visible shop door",
+    "Dragging does not trigger door click",
+    "Pedestrians wait for open doors and slow on stairs",
+    "Pause freezes matrices and positions",
+    "Four lantern light pools and native assets"
+  ],
+  "limitation": "Node DOM/renderer stubs; not browser WebGL rendering or mobile performance.",
+  "originalScenePreserved": true,
+  "visualReview": "Offline Blender overview and reverse views of serialized runtime geometry; not a browser capture.",
+  "provenance": "Read-only reuse of original native Blender GLBs; new Three.js periodic assembly."
+}
