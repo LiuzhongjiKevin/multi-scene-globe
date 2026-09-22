@@ -1,7 +1,0 @@
-Unmodified Form validator: five failures, all native-route exceptions approved by user.
-FAIL: generation must use Meshy model meshy-5
-FAIL: official Meshy pricing verification required
-FAIL: positive creditsPerTexturedTask required
-FAIL: hardCreditCeiling must be positive
-FAIL: accepted hashed Meshy GLB required
-No other Form validator failures. Raw validator does not PASS.
