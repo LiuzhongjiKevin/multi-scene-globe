@@ -1,8 +1,6 @@
 {
-  "branch": "main",
+  "branch": "scene/yugure",
   "entries": [
-    "index.html",
-    "kyoto.html",
-    "kyoto-loop.html"
+    "index.html"
   ]
 }
