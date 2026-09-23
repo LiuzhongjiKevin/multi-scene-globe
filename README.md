@@ -41,6 +41,8 @@ pedestrians, sliding doors and third-person exploration in the Kyoto scenes.
 
 ## 运行
 
+下载源码 ZIP 的用户请先阅读 [从这里开始](START_HERE.zh-CN.md)，包含本地、Docker 和群晖部署步骤。
+
 先安装 Git 和 Python 3。克隆完整项目：
 
 ```sh
