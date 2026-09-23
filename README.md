@@ -1,89 +1,31 @@
-# Multi Scene Globe 🌍
+# Kyoto Ninenzaka & Sannenzaka Scene 🏮
 
-A Blender + Three.js interactive miniature world collection.
+A Three.js interactive miniature world inspired by Kyoto's historic hillside streets.
 
-## Overview
+## Scene
 
-Multi Scene Globe is an experimental WebGL project that combines Blender environment modeling with Three.js interactive exploration.
+This branch focuses on a stylized reconstruction of the Ninenzaka and Sannenzaka atmosphere:
 
-Features:
-
-- 🌐 Globe-style miniature scenes
-- 🎮 Third-person character exploration
-- 🚪 Interactive doors and scene objects
-- 🏮 Japanese-inspired environments
-- 📦 Blender / glTF asset pipeline
-
-## Scenes
-
-### scene/yugure
-
-**Yugure Town - Twilight Japanese Neighborhood**
-
-A peaceful Japanese residential miniature world with:
-
-- curved streets
-- riverside paths
-- cherry blossom trees
-- pedestrians
-- interactive houses
-
-### scene/kyoto
-
-**Kyoto Ninenzaka & Sannenzaka Inspired Street**
-
-A stylized recreation inspired by Kyoto historic streets:
-
-- stone stairs
-- traditional Machiya buildings
-- lantern lighting
+- Traditional Machiya buildings
+- Stone steps and narrow alleys
+- Lantern-lit streets
 - Yasaka Tower landmark
-- walking exploration
+- Walking visitors
 
-### scene/kyoto-loop
+## Interaction
 
-**Kyoto Sannenzaka Globe Loop**
+- WASD: third-person movement
+- Mouse: camera control
+- E / Left Click: interact with doors and shops
 
-An artistic spherical closed-loop version:
+## Technology
 
-- curved world layout
-- continuous walking route
-- miniature planet exploration
-- preserved empty space outside the scene
+- Blender environment modeling
+- Three.js WebGL rendering
+- glTF / GLB assets
 
-## Controls
+## Note
 
-Desktop:
+This is an artistic miniature interpretation inspired by the real location, not a complete geographic replica.
 
-- WASD: move
-- Mouse: camera
-- Left click / E: interact
-
-Mobile:
-
-- Virtual joystick
-- Touch camera control
-
-## Tech Stack
-
-- Blender
-- Three.js
-- WebGL
-- JavaScript
-- glTF / GLB
-
-## Structure
-
-```
-├── src
-├── scenes
-├── blender
-├── assets
-└── docs
-```
-
-## License
-
-MIT License.
-
-Some geographic references may require attribution according to their original data licenses.
+See the main branch for full project documentation.
