@@ -1,5 +1,16 @@
 {
   "pass": true,
+  "shopVisits": {
+    "pass": true,
+    "checks": [
+      "Street-only walkers avoid doors and remain visible",
+      "Visitors wait for closed doors",
+      "Visible threshold crossing precedes disappearance",
+      "Doors close after entry, including initially open shops",
+      "Manual openings close after a completed visit",
+      "Shared doors stay open until the last visitor crosses"
+    ]
+  },
   "exploration": {
     "pass": true,
     "checks": [
@@ -13,13 +24,13 @@
     ],
     "limitations": "Node production-logic checks with DOM/renderer stubs; no browser GPU or touch-device visual validation."
   },
-  "virtualSeconds": 454.4900000000691,
+  "virtualSeconds": 474.8900000000737,
   "events": {
-    "arrivals": 118,
-    "departures": 116,
-    "doorClicks": 4,
-    "doorWaitFrames": 764,
-    "stairFrames": 32609
+    "arrivals": 21,
+    "departures": 14,
+    "doorClicks": 5,
+    "doorWaitFrames": 116,
+    "stairFrames": 43646
   },
   "people": 30,
   "meshes": 425,

@@ -3,8 +3,8 @@
   "virtualSeconds": 499.9900000000794,
   "people": 24,
   "events": {
-    "arrivals": 95,
-    "departures": 93
+    "arrivals": 87,
+    "departures": 83
   },
   "checks": [
     "Actual application animation loop with renderer/DOM stubs",

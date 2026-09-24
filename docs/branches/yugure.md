@@ -96,7 +96,7 @@ node --loader ./design-review/simulation-loader.mjs design-review/check-simulati
 ## 其他场景
 
 [全量主分支](https://github.com/LiuzhongjiKevin/multi-scene-globe/tree/main) · [夕暮町](https://github.com/LiuzhongjiKevin/multi-scene-globe/tree/scene/yugure) ·
-[京都原版](https://github.com/LiuzhongjiKevin/multi-scene-globe/tree/scene/kyoto) · [京都球面环游](https://github.com/LiuzhongjiKevin/multi-scene-globe/tree/scene/kyoto-loop)
+[京都原版](https://github.com/LiuzhongjiKevin/multi-scene-globe/tree/scene/kyoto)
 
 ## 开源许可
 

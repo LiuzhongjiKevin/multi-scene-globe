@@ -5,7 +5,7 @@ from urllib.parse import urlsplit, unquote
 import re, json
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / 'dist'
-manifest = json.loads((ROOT / 'scene-manifest.json').read_text())
+manifest = json.loads((ROOT / 'scene-manifest.json').read_text(encoding='utf-8'))
 checked = set()
 errors = []
 def visit(path):
@@ -18,7 +18,7 @@ def visit(path):
     if not path.is_file():
         errors.append(f'Missing: {path.relative_to(ROOT)}'); return
     if path.suffix not in ('.js', '.html', '.css'): return
-    source = path.read_text()
+    source = path.read_text(encoding='utf-8')
     def relative(value):
         parts = urlsplit(value)
         if parts.scheme or parts.netloc or value.startswith('#'): return

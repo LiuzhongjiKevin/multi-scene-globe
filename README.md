@@ -1,6 +1,6 @@
 # Multi-Scene Globe · 多场景球体
 
-以 Blender 原生模型与 Three.js / WebGL 构建的黄昏微缩街景：住宅小星球、京都二年坂三年坂，以及可绕行一周的京都球面街区。
+以 Blender 原生模型与 Three.js / WebGL 构建的黄昏微缩街景：住宅小星球，以及京都二年坂三年坂。
 
 A collection of interactive miniature worlds, with Blender-authored assets, autonomous
 pedestrians, sliding doors and third-person exploration in the Kyoto scenes.
@@ -29,16 +29,6 @@ pedestrians, sliding doors and third-person exploration in the Kyoto scenes.
 
 [查看独立分支与更多配图](https://github.com/LiuzhongjiKevin/multi-scene-globe/tree/scene/kyoto)
 
-### 京都 · 二三年坂球面环游
-
-将已有京都街段沿起伏的球面带状区域重排，主街首尾相接。绕过町屋和灯笼后回到起点；二年坂保留为支路。
-
-![球面环游正面 · Blender 离线结构渲染](design-review/sannenzaka-loop/overview.png)
-
-配图是该闭环场景的 Blender 离线结构渲染，不是浏览器截图。网页最终灯光与界面以实际运行为准。地图 © OpenStreetMap contributors / ODbL 1.0。
-
-[查看独立分支与更多配图](https://github.com/LiuzhongjiKevin/multi-scene-globe/tree/scene/kyoto-loop)
-
 ## 运行
 
 下载源码 ZIP 的用户请先阅读 [从这里开始](START_HERE.zh-CN.md)，包含本地、Docker 和群晖部署步骤。
@@ -64,21 +54,19 @@ Three.js 与运行素材均随仓库提供，首次运行无需从 CDN 下载依
 
 | 分支 | 内容 | 页面 |
 | --- | --- | --- |
-| `main` | 全量项目：全部场景、历史源码、模型、地图、建模脚本和审核渲染 | 下列三个入口 |
+| `main` | 全量项目：全部场景、历史源码、模型、地图、建模脚本和审核渲染 | 下列两个入口 |
 | `scene/yugure` | 夕暮町住宅小星球：樱花、草地、河流、来往行人 | `index.html` |
 | `scene/kyoto` | 京都二年坂三年坂微缩街区 | `index.html` |
-| `scene/kyoto-loop` | 京都球面闭环街区 | `index.html` |
 
 `main` 的入口：
 
 - [夕暮町](http://localhost:8080/index.html)
 - [京都原版](http://localhost:8080/kyoto.html)
-- [京都球面环游](http://localhost:8080/kyoto-loop.html)
 
 独立分支均能自行运行，包含对应的入口、依赖、模型和建模来源，不需要先检出 `main`。
 
 ```sh
-git clone --branch scene/kyoto-loop https://github.com/LiuzhongjiKevin/multi-scene-globe.git
+git clone --branch scene/kyoto https://github.com/LiuzhongjiKevin/multi-scene-globe.git
 cd multi-scene-globe
 python3 -m http.server 8080 --directory dist
 ```
@@ -86,10 +74,10 @@ python3 -m http.server 8080 --directory dist
 ## 操作
 
 - 全景：拖动旋转，滚轮缩放；点击店门或住宅门交互。
-- 三个场景都有来往行人、第三人称跟随、切换行人与暂停功能。
-- 京都两版：点击“自由探索”，WASD / 方向键移动，拖动调整视角，靠近可交互店门后按鼠标左键或 E；Esc 退出探索。
-- 京都两版提供触屏摇杆和独立交互按钮。夕暮町目前是行人跟随模式，没有玩家自由移动。
-- 球面版主街首尾相接，可连续绕行；二年坂保留为支路。
+- 两个场景都有来往行人、第三人称跟随、切换行人与暂停功能。
+- 京都 39 个可进入店铺中有 13 个初始开门；30 位行人中有 10 位会偶尔进店，等待门打开、进入室内后消失，随后关门，其余行人持续沿街散步。
+- 京都场景：点击“自由探索”，WASD / 方向键移动，拖动调整视角，靠近可交互店门后按鼠标左键或 E；Esc 退出探索。
+- 京都场景提供触屏摇杆和独立交互按钮。夕暮町目前是行人跟随模式，没有玩家自由移动。
 
 ## 技术与文件
 
@@ -106,7 +94,6 @@ Blender 4.3.2 制作房屋、居民、自行车、路灯等原生模型，再导
 | `design-review/yugure-form.blend` | 共用住宅、人物、自行车等模型源文件 |
 | `design-review/*.py` | 共用模型建模、审查和导出脚本 |
 | `design-review/sannenzaka/` | 京都模型源文件、OSM 源数据、提取脚本与离线渲染 |
-| `design-review/sannenzaka-loop/` | 球面街区合成源文件、布局数据与离线渲染 |
 | `scripts/check-package.py` | 当前分支入口、模块、资源和页面链接检查 |
 
 `main` 保留旧版 `main.js`、`kyoto-theme.js` 和历史审核文件，用于追溯。
@@ -141,16 +128,13 @@ python3 scripts/check-package.py
 node --loader ./design-review/simulation-loader.mjs design-review/check-simulation.mjs
 # 京都原版（main / scene/kyoto）
 node --loader ./design-review/sannenzaka/test-loader.mjs design-review/sannenzaka/check-runtime.mjs
-# 京都球面版（main / scene/kyoto-loop）
-node --loader ./design-review/sannenzaka-loop/test-loader.mjs design-review/sannenzaka-loop/check-runtime.mjs
 ```
 
-逻辑检查使用 Node DOM / 渲染器替身，覆盖人物、门、碰撞、探索与闭环运动；
+逻辑检查使用 Node DOM / 渲染器替身，覆盖人物、门、碰撞、探索与店铺进出；
 不等同于浏览器 GPU 渲染、帧率或真机多点触控验证。截图目录里的 PNG 为 Blender
 离线结构渲染，不能视为当前网页截图。旧审核记录保留其原有未通过项。
 
 京都道路与建筑锚点来自 OSM；地形高度、立面、店内、灯光为艺术重建。
-球面版对已有街段做重排和首尾连接，**不是现实京都地理闭环**，也不是逐栋测绘复刻。
 
 ## 开源许可
 

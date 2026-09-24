@@ -1,5 +1,5 @@
 {
-  "description": "Complete source snapshot; manifest excludes itself. ZIP content is verified against these hashes.",
+  "description": "Current source snapshot; manifest excludes itself.",
   "files": {
     ".dockerignore": {
       "bytes": 31,
@@ -14,24 +14,24 @@
       "sha256": "0800f5304d34a6a8a16301358df5b2076d12cade4e890cc401aac8f5f221f23d"
     },
     "EXPORT_NOTES.md": {
-      "bytes": 1048,
-      "sha256": "5bbd3546518cd6ca916d65a0793efb8f82932d2b2d8e4ae53008cd60e3c344fd"
+      "bytes": 1046,
+      "sha256": "0ca1107fbae79b090dc3b903891de260a352d7f294fecb65aff619579f38303e"
     },
     "LICENSE": {
       "bytes": 1087,
       "sha256": "81d43ae5b49e85ceb44acb2c1adae542c355fce7c45d6706d41b62567622b8bf"
     },
     "README.md": {
-      "bytes": 9387,
-      "sha256": "ffd123b9a0515d90becfe308db81f965b130f28ef7084686416211ecd8997aad"
+      "bytes": 8374,
+      "sha256": "6c314fa5aba60ff03cf1bcd1398fba400afe3cd44d02bf98ff99ec5201aebec1"
     },
     "START_HERE.zh-CN.md": {
-      "bytes": 2792,
-      "sha256": "0ab6a6b48a8110b85de93f27e00ba6ceaf02bb7e498b7762555a54c7a4ce48ab"
+      "bytes": 2728,
+      "sha256": "87538959e0d2fe0f1c806e07bbb6d8c6e458066a36b7fb2a731a34f300020ee3"
     },
     "THIRD_PARTY_NOTICES.md": {
-      "bytes": 2015,
-      "sha256": "1dc38a42d4a0672377449cb34317f454760c91381996c981926e52af900ae253"
+      "bytes": 1861,
+      "sha256": "a9aebf56bc847c2203709bb7845be74e4000a7b8517e1032ec4b5156aec10c04"
     },
     "compose.yaml": {
       "bytes": 89,
@@ -309,90 +309,6 @@
       "bytes": 1745,
       "sha256": "ae758a14857d1100bb23a6134fb9610d9328d44fae67282e78d84d3f095e95c7"
     },
-    "design-review/sannenzaka-loop/README.md": {
-      "bytes": 2914,
-      "sha256": "446f6eb1ff250daeff953604c583235146a28700228cfa13635965004493779e"
-    },
-    "design-review/sannenzaka-loop/camera-views.json": {
-      "bytes": 159,
-      "sha256": "7640b9ed56d5d6a93fe3b7ae129f068e121b2eeb482cff39b4a12cfeff9d2eff"
-    },
-    "design-review/sannenzaka-loop/check-exploration.mjs": {
-      "bytes": 6510,
-      "sha256": "facc878441701339d07ad5ce816b7084e673385b28e342902c4101f17c81ed71"
-    },
-    "design-review/sannenzaka-loop/check-loop.mjs": {
-      "bytes": 3003,
-      "sha256": "0729a36b5ce142c64adbc911cd6dc920be19e6fa7b3edbdfe095f2af82d8c3f2"
-    },
-    "design-review/sannenzaka-loop/check-runtime.mjs": {
-      "bytes": 6786,
-      "sha256": "f9f39fc0d29fb23142f66f3d58da8ee71fdad3c09a0e54a6d245e5f22f91e9b8"
-    },
-    "design-review/sannenzaka-loop/composition.json": {
-      "bytes": 6707885,
-      "sha256": "c1b01e5942e5baef828fe45ad7deadbef79d7f2aff926aa31fb0737851346d63"
-    },
-    "design-review/sannenzaka-loop/contract.json": {
-      "bytes": 2309,
-      "sha256": "16294f6aac951885836036c7a4739c63522dbfb795b37c86d20a1e0537c364bc"
-    },
-    "design-review/sannenzaka-loop/district-composition.blend": {
-      "bytes": 26512048,
-      "sha256": "64a9c3c88ce68f5bc8359b02ec6d657e9d42e83b39c990b96a08301f6f35cc91"
-    },
-    "design-review/sannenzaka-loop/exploration-check.json": {
-      "bytes": 799,
-      "sha256": "149a9e885ce860dcf0e264457684ce32e799f34e29eaceda5df3273d3a0523ac"
-    },
-    "design-review/sannenzaka-loop/final-report.json": {
-      "bytes": 2738,
-      "sha256": "bf25d5352f2f214581d20059e0498d82e82baffaa3968423eacb3e6161a89ccd"
-    },
-    "design-review/sannenzaka-loop/generic-gate-audit.txt": {
-      "bytes": 860,
-      "sha256": "52dbcfcaee826d53e00866512560c53046749093696ce0fb250b2cb8fc9e5e32"
-    },
-    "design-review/sannenzaka-loop/inspect-map.mjs": {
-      "bytes": 746,
-      "sha256": "ec8f43e5165cdfed14d86f45f08a17a014bf52c6d1559fbcd4adcae5c2386ccf"
-    },
-    "design-review/sannenzaka-loop/loop-check.json": {
-      "bytes": 524,
-      "sha256": "92a67a6879b751f2c77cf81ba8083edf22ad3920cb71b40b812fcf7258337bf7"
-    },
-    "design-review/sannenzaka-loop/map.json": {
-      "bytes": 135611,
-      "sha256": "2605f953be9e2b803cdcb160140e08468aed16b91c499a767d4a549d24b8cb7c"
-    },
-    "design-review/sannenzaka-loop/overview.png": {
-      "bytes": 1031000,
-      "sha256": "a77ea9c65a74a90715d8e17e81edff7b4d4779b8ca9e236c04f3d3424143ed8d"
-    },
-    "design-review/sannenzaka-loop/postmortem.md": {
-      "bytes": 1309,
-      "sha256": "e087dcdf0ff10d82fd9d4d13b28db705d90f377b0477b12508ad477f505e5bc2"
-    },
-    "design-review/sannenzaka-loop/preserved-files.json": {
-      "bytes": 4675,
-      "sha256": "79b1fe391f2bb74bb591d2b46c1075ebedca5d3c42b6108461e7b121fcbab047"
-    },
-    "design-review/sannenzaka-loop/render_composition.py": {
-      "bytes": 3387,
-      "sha256": "86b459310983b45e7bfe12e564644bc52014d67815c418e3fb4a823547e0dd04"
-    },
-    "design-review/sannenzaka-loop/reverse.png": {
-      "bytes": 1038868,
-      "sha256": "92d248c70cbb1d14c6faa1d270832ac0c160c328565a20be989345bd9394f2fa"
-    },
-    "design-review/sannenzaka-loop/runtime-check.json": {
-      "bytes": 2484,
-      "sha256": "ff9c8a335fc55f3554eb9d20208cd5bd446b5208f1a2a6dbdcbc026cf3f95a07"
-    },
-    "design-review/sannenzaka-loop/test-loader.mjs": {
-      "bytes": 404,
-      "sha256": "29aa02b9f0d06850acbd710bb30479437d1bb2569c726b703af27010191c767e"
-    },
     "design-review/sannenzaka/README.md": {
       "bytes": 4436,
       "sha256": "62df8f0ed084b066ef4a832b3e040a9d913e07930fc7ad32791a7379b4fcdac2"
@@ -418,8 +334,12 @@
       "sha256": "9c4dfe405d30f16eb77f394d913c33edb97c49f4d6efaac09b094af5109c3703"
     },
     "design-review/sannenzaka/check-runtime.mjs": {
-      "bytes": 6524,
-      "sha256": "1cb319c0249557ee1b5a2a7b0b1cc0b8056e2fd450d4c17b8bd9bf558430aeeb"
+      "bytes": 7187,
+      "sha256": "530affe7d81a3832307c085db214482cc363eba0f5d5d5c1ad4f45653d5c83d9"
+    },
+    "design-review/sannenzaka/check-shop-visits.mjs": {
+      "bytes": 4536,
+      "sha256": "952ab88465154fb5cc46d590a7b047d29e86bc318887ea8833a6ea0846136ba9"
     },
     "design-review/sannenzaka/composition.json": {
       "bytes": 5238261,
@@ -470,8 +390,8 @@
       "sha256": "54e115f11029b2a9e826614fca5ffb25de3758ae78668b4dcae9cd8bb2631a5f"
     },
     "design-review/sannenzaka/runtime-check.json": {
-      "bytes": 1897,
-      "sha256": "34170f7eb689c6c0d941dc07227339a3b10b95c651223ada9c4316e8cbb64321"
+      "bytes": 2299,
+      "sha256": "c7d06dd4219b17d904a47df520d0122941b62cf887dc410dff4fca0ec839e731"
     },
     "design-review/sannenzaka/sannen.png": {
       "bytes": 1384167,
@@ -495,7 +415,7 @@
     },
     "design-review/simulation-check.json": {
       "bytes": 569,
-      "sha256": "dadb03582aec0862c1878d64100dc30895fc1e3acf51520401c38da075fab6c2"
+      "sha256": "1c9453853e6661fc55455a5f63d38b54b90fc3e54c7136cc077c519b50a99771"
     },
     "design-review/simulation-loader.mjs": {
       "bytes": 423,
@@ -537,10 +457,6 @@
       "bytes": 1873,
       "sha256": "a61567590aec0895e6a3fe9e38bd4c7bf8d1194bd1f897774cfc229d55a0164e"
     },
-    "dist/kyoto-loop.html": {
-      "bytes": 3518,
-      "sha256": "3f2156b2a3449970c0dcd9b6ee56836c56a79ccefd8f626653e0a7543322f51f"
-    },
     "dist/kyoto-theme.js": {
       "bytes": 3722,
       "sha256": "41a06a6169135d60b0c67846e0f5eb9e4468974ce6586b2638613af133f7baeb"
@@ -548,26 +464,6 @@
     "dist/kyoto.html": {
       "bytes": 3437,
       "sha256": "f290e8535c8f3b5bd9fb15f8d113970e3b538d619e574e5844ff4dd3d6bccbc6"
-    },
-    "dist/loop-main.js": {
-      "bytes": 18376,
-      "sha256": "f774fa6c938b4849897a738c8c999307d8e49653036cce36a9a7829cc60ae000"
-    },
-    "dist/loop-map.js": {
-      "bytes": 4642,
-      "sha256": "f281bc1225b97dac6d1a4027b6372006e964a45fa1f4139507fe59f3110e18a9"
-    },
-    "dist/loop-player.js": {
-      "bytes": 3806,
-      "sha256": "2b8b5baa4e73e8ccdf5370bf7dc202cbf54fcc79999bd22bd0d6cb958898c046"
-    },
-    "dist/loop-scene.js": {
-      "bytes": 13542,
-      "sha256": "281942f542becc3f3aca6f6ab1338b8ace0fb35259791a0abab22b7c1f962f2f"
-    },
-    "dist/loop-surface.js": {
-      "bytes": 4567,
-      "sha256": "14a1aa1938346ccf308d1eedef8ecd208dc97ba501051c2e2dab79615435fe1a"
     },
     "dist/main.js": {
       "bytes": 18933,
@@ -578,8 +474,8 @@
       "sha256": "4119e3422faededd1cda00a45971f514026bdd0440a50c17d764f9dd37723033"
     },
     "dist/sannen-main.js": {
-      "bytes": 17950,
-      "sha256": "76d211a1d41e6cf8329e9741fed45e0a8a4a0f3155081afc2be2727f3efc15fc"
+      "bytes": 18663,
+      "sha256": "9dd126b26723542d3f0cd860b5deb364711765ef2008ba86a912c7336c26b2b9"
     },
     "dist/sannen-network.js": {
       "bytes": 4310,
@@ -590,8 +486,8 @@
       "sha256": "b11212b73daf42fdf7eddb1e5bbd1e1af107c1e84496dba25d88215d5eea353c"
     },
     "dist/sannen-scene.js": {
-      "bytes": 13507,
-      "sha256": "bd8fa3209053742c61588e5069e49e55dd710ca815184165666a5f822a032798"
+      "bytes": 13614,
+      "sha256": "73d8c03c9f34e8ae0f449969c617bdfee22ff4def8f8a76e4d2e74bc4119859b"
     },
     "dist/sannen.css": {
       "bytes": 5017,
@@ -709,25 +605,29 @@
       "bytes": 662772,
       "sha256": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea"
     },
-    "docs/branches/kyoto-loop.md": {
-      "bytes": 5594,
-      "sha256": "d04a024e1f77e3bffc3aa0ab2fec891288042a4d211178a916cbb463623866b7"
-    },
     "docs/branches/kyoto.md": {
-      "bytes": 5637,
-      "sha256": "efaa5dacb8a311e98155d4a0b0a46a30bd9ed4b607321169ae6d498147853dc0"
+      "bytes": 5700,
+      "sha256": "949c1d0694e6784dfc9416dd2b609de9d4ca98e0921ca6c3a9dde0b38001f727"
     },
     "docs/branches/yugure.md": {
-      "bytes": 4787,
-      "sha256": "7dedb893b553bb72378683249e6b82c680dcb0aac970cdaef18328c20a3b8bb2"
+      "bytes": 4687,
+      "sha256": "e4882e0780daa4f35c523c3e18677c34d7886782c9036863de3a16402879cefd"
     },
     "scene-manifest.json": {
-      "bytes": 101,
-      "sha256": "1fc60d6e8b7c7b725bbbbcebd727cd30bd9cf4b01d45d69c07ee4eb15f01cd05"
+      "bytes": 78,
+      "sha256": "5027517018d4f95da7a81ee7ae60de382782a0207110b8ed6c25c66664e3a01d"
     },
     "scripts/check-package.py": {
-      "bytes": 2221,
-      "sha256": "3ee6e8d672237067152f8fb1e99f728c80b5c4f283011e836336dd92ed0e4883"
+      "bytes": 2253,
+      "sha256": "bae65218af8fee72d91e511bf04a1e60abc13cdb57fa45f97655048728ec2993"
+    },
+    "start-local.bat": {
+      "bytes": 254,
+      "sha256": "3e29f37fff99c200372466acd1dce7b8fb847d257caba8fa1e18c6b426ebfe96"
+    },
+    "start-local.sh": {
+      "bytes": 108,
+      "sha256": "4d5a44066d8936e75c9ca0a782bba59f14a621e25ab3f0ade06697c820a18726"
     }
   }
 }

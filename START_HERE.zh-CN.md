@@ -4,9 +4,9 @@
 
 ## 完整源码包内容
 
-- `dist/`：三个场景的可编辑 JavaScript 源码、HTML、CSS、GLB、地图与本地 Three.js。
-- `design-review/`：5 个 Blender 源文件、建模/导出脚本、OSM 原始数据、布局、逻辑检查与离线渲染。
-- `docs/branches/`：三个独立分支各自的 README 副本。
+- `dist/`：两个场景的可编辑 JavaScript 源码、HTML、CSS、GLB、地图与本地 Three.js。
+- `design-review/`：4 个 Blender 源文件、建模/导出脚本、OSM 原始数据、布局、逻辑检查与离线渲染。
+- `docs/branches/`：两个独立分支各自的 README 副本。
 - `scripts/check-package.py`：前端入口及依赖检查。
 - `Dockerfile` / `compose.yaml`：静态网站容器配置。
 - `FILE_MANIFEST.json`：逐文件大小及 SHA-256，用于核对完整性。
@@ -28,7 +28,6 @@ Windows 可以用 `py -m http.server 8080 --directory dist`。
 
 - 夕暮町：http://localhost:8080/index.html
 - 京都二三年坂原版：http://localhost:8080/kyoto.html
-- 京都球面闭环版：http://localhost:8080/kyoto-loop.html
 
 不要直接双击 HTML。Ctrl+C 停止服务器。无需额外下载 Three.js 或 GLB。
 
@@ -59,7 +58,7 @@ Docker 配置已提供；本次环境没有 Docker 服务，未声称已实测�
 
 ## 验证与素材说明
 
-在源码包执行 `python3 scripts/check-package.py` 验证三个入口的本地依赖。
+在源码包执行 `python3 scripts/check-package.py` 验证两个入口的本地依赖。
 本次打包逐文件校验 ZIP 解压内容的 SHA-256，并核对 GLB 文件头和内嵌资源。
 README 配图为标明来源的 Blender 渲染，未把它们当作当前网页截图。
 地图数据 © OpenStreetMap contributors / ODbL 1.0；其他许可见 THIRD_PARTY_NOTICES.md。

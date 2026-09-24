@@ -1,7 +1,7 @@
 # Public export
 
 This export preserves all tracked runtime files and the modelling/review sources from
-the current three-scene project. The original Site checkout is untouched.
+the current two-scene project. The original Site checkout is untouched.
 Internal hosting configuration, site operations state and the conversation authorization
 excerpt are omitted. Historical milestone statuses and evidence remain; chat excerpts
 in their notes are replaced by a factual historical-review notice.
