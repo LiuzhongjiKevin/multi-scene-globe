@@ -1,6 +1,8 @@
 import * as T from 'three';
 export function buildDistrict(scene,town,library,props=null){
- const root=new T.Group();root.name='Ninenzaka_Sannenzaka';scene.add(root);const batches=new Map(),dummy=new T.Object3D(),box=new T.BoxGeometry(1,1,1),ball=new T.IcosahedronGeometry(1,2),cylinder=new T.CylinderGeometry(1,1,1,8),mats={},doorBatches=[],doorStates=town.buildings.map(()=>0),doorTargets=town.buildings.map(()=>0);
+ const root=new T.Group();root.name='Ninenzaka_Sannenzaka';scene.add(root);const batches=new Map(),dummy=new T.Object3D(),box=new T.BoxGeometry(1,1,1),ball=new T.IcosahedronGeometry(1,2),cylinder=new T.CylinderGeometry(1,1,1,8),mats={},doorBatches=[],doorDefaults=town.buildings.map(()=>0);
+ town.homes.forEach((h,i)=>{if(i%3===0)doorDefaults[h.id]=1});
+ const doorStates=[...doorDefaults],doorTargets=[...doorDefaults];
  const material=(name,color,extra={})=>mats[name]??(mats[name]=new T.MeshStandardMaterial({name,color,roughness:.82,...extra}));
  const stone=material('paving','#9a9686'),border=material('granite','#777b78'),earth=material('earth','#756253'),wood=material('cedar','#654231'),black=material('iron','#343c3b'),green=material('moss','#6d8155'),leaf=material('foliage','#748857'),pink=material('sakura','#e6b9ab'),paper=material('paper','#ffc888',{emissive:'#ff9d43',emissiveIntensity:.65}),red=material('cloth','#9b4b40'),glass=material('glass','#bac6bc',{transparent:true,opacity:.23,depthWrite:false});
  const pavingTones=['#999688','#aaa493','#8d8b80','#b0a998'].map((color,i)=>material('paving_'+i,color));
@@ -67,5 +69,5 @@ export function buildDistrict(scene,town,library,props=null){
   const tick=Math.floor(time*30);if(tick===lastPetalTick)return;lastPetalTick=tick;
   for(let i=0;i<100;i++){const anchor=decorative[i%decorative.length],phase=(time*.15+i*.371)%1;dummy.position.copy(anchor).add(new T.Vector3(Math.sin(i*3.1+time*.22)*2.2,4.7*(1-phase),Math.cos(i*1.7+time*.2)*2));dummy.rotation.set(time*.3+i,time*.4,Math.sin(i));dummy.scale.setScalar(1);dummy.updateMatrix();petals.setMatrixAt(i,dummy.matrix)}petals.instanceMatrix.needsUpdate=true;
  }
- update(0,1);return {root,doorTargets,doorStates,obstacles,update,stats:{mappedBuildings:town.buildings.length,storefronts:town.homes.length,stairTreads:treadCount,pavers:paverCount,lanterns,lightPools:usedLights.length,bicycleParking:parking.length,nativeAssets:true}};
+ update(0,1);return {root,doorDefaults,doorTargets,doorStates,obstacles,update,stats:{mappedBuildings:town.buildings.length,storefronts:town.homes.length,stairTreads:treadCount,pavers:paverCount,lanterns,lightPools:usedLights.length,bicycleParking:parking.length,nativeAssets:true}};
 }

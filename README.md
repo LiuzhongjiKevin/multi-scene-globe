@@ -24,6 +24,7 @@
 
 - 8 个地图街段、142 个建筑锚点、39 个可进入店铺和 30 位自主行人。
 - 自由探索与 NPC 跟随两种模式；可进入店铺，也可观察行人进出。
+- 13 个可交互店门初始打开；10 位行人会偶尔进店，先开门、进入室内后消失，再关闭店门。其他 20 位行人持续沿街散步。
 - 近距离门扇交互、石阶减速、关门占位保护和第三人称相机遮挡处理。
 - 二年坂、三年坂、八坂塔和全景视角快捷切换。
 
@@ -108,7 +109,7 @@ node --loader ./design-review/sannenzaka/test-loader.mjs design-review/sannenzak
 ## 其他场景
 
 [全量主分支](https://github.com/LiuzhongjiKevin/multi-scene-globe/tree/main) · [夕暮町](https://github.com/LiuzhongjiKevin/multi-scene-globe/tree/scene/yugure) ·
-[京都原版](https://github.com/LiuzhongjiKevin/multi-scene-globe/tree/scene/kyoto) · [京都球面环游](https://github.com/LiuzhongjiKevin/multi-scene-globe/tree/scene/kyoto-loop)
+[京都原版](https://github.com/LiuzhongjiKevin/multi-scene-globe/tree/scene/kyoto)
 
 ## 开源许可
 
